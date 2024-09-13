@@ -1,0 +1,47 @@
+
+.card {
+  background-color: #ffffff;
+  padding: 25px; /* Чуть больше пространства внутри */
+  border-radius: 12px; /* Более мягкие углы */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Более мягкая тень */
+  margin: 20px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Переходы для плавных эффектов */
+  position: relative; /* Для использования абсолютных элементов */
+}
+
+.card:hover {
+  transform: translateY(-8px); /* Небольшое поднятие при наведении */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15); /* Более глубокая тень при наведении */
+  background-image: linear-gradient(135deg, #f5f7fa, #e4e9ef); /* Легкий градиент при наведении */
+}
+
+.cardTitle {
+  font-size: 1.6rem; /* Немного увеличенный размер шрифта */
+  color: #2c3e50;
+  margin-bottom: 15px;
+  transition: color 0.3s ease; /* Плавный переход цвета */
+}
+
+.cardContent {
+  font-size: 1rem;
+  color: #4a4a4a;
+  line-height: 1.6; /* Увеличение межстрочного интервала для лучшей читаемости */
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(76, 175, 80, 0.05); /* Легкий зеленый оттенок фона */
+  border-radius: 12px;
+  z-index: -1;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+  opacity: 0; /* Убирает оттенок при наведении */
+}

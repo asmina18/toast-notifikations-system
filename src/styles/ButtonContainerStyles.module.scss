@@ -1,0 +1,29 @@
+/* src/styles/ButtonContainerStyles.module.scss */
+.buttonContainer {
+    display: flex; /* Flexbox til at arrangere elementer */
+    justify-content: center; /* Centrerer indholdet horisontalt */
+    align-items: center; /* Centrerer indholdet vertikalt */
+    gap: 15px; /* Afstand mellem knapper */
+    margin: 40px auto; /* Top og bund margin for spacing */
+    padding: 20px; /* Indvendig afstand for containeren */
+    max-width: 600px; /* Begrænser maksimal bredde for containeren */
+    background-color: #f0f0f0; /* Let baggrundsfarve for at fremhæve containeren */
+    border-radius: 12px; /* Bløde hjørner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Let skygge for dybde */
+  }
+  
+  .toastButton {
+    flex: 1; /* Knappen tager lige meget plads i flex-containeren */
+    padding: 12px 18px; /* Polstring for større klikområde */
+    border-radius: 8px; /* Afrundede hjørner */
+    font-size: 1rem; /* Standard skriftstørrelse */
+    cursor: pointer; /* Cursor ændring ved hover */
+    transition: all 0.3s ease; /* Overgange for hover-effekter */
+  }
+  
+  .toastButton:hover {
+    background-color: #ddd; /* Farveændring ved hover */
+    transform: translateY(-2px); /* Løft ved hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Dyb skygge ved hover */
+  }
+  
